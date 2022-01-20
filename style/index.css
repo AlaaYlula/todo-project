@@ -45,9 +45,13 @@ header {
     grid-row: 2 / 3;
  }
 
- .status{/*color the status*/
+ 
+
+
+ .status{
     background-color: burlywood;
  }
+ 
  .table,td,th{
    border: 1px solid #000;
    text-align: center;
