@@ -15,27 +15,35 @@
  }
  
  header {
-    background-color:  #b7bfc7;
-    height: 80px;
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    display: flex;/*put the nav up_specify padding */
-    align-items: center;/*make the element at center of header*/
-    justify-content: space-between;/*put nav on right*/
-  }
- .header-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-  }
- 
-  header .header-nav a {
-    padding: 0px 400px 0px 40px;
-    margin-right: 50px;
-    color: #000;
-    /*float: right!important;*/
-  }
+  background-color:  #b7bfc7;
+  height: 80px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;/*put the nav up_specify padding */
+  align-items: center;/*make the element at center of header*/
+  justify-content: space-between;/*put nav on right*/
+}
 
+.header-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.header-nav li{
+   display: inline;
+}
+.header-nav a {
+  display: inline-block;
+  padding: .5em;
+  text-decoration: none;
+  color: #000;
+  /*float: right!important;*/
+}
+.header-nav a:hover{
+  background-color: beige;
+}
   main {
     grid-column: 1 / -1;
     grid-row: 2 / 4;
@@ -145,32 +153,43 @@
     cursor: pointer;
    }
    */
-  footer{
-      padding-bottom: 0px;
-      display: flex;
-      background-color:  #b7bfc7;
-      justify-content: space-between;
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      grid-row: 4 / -1;
-     
-   }
-   
-   .follow{
-      padding-right: 50px;
-      padding-top: 5px;
-     
-   }
-   /*
-   .follow li{
-    
-         display: inline;
-     
-   }*/
-   .copy{
-      position: relative;
-      left: 650px;
-      padding-top: 5px;
-      align-items: center;
-   }
+   .main-footer{
+    background-color:  #b7bfc7;
+   justify-content: space-between;
+   grid-column: 1 / -1;
+   grid-row: 4 / -1;
+  
+}
+
+.main-footer-container{
+   display: flex;
+   align-items: center;
+}
+
+.follow li{
+ 
+      display: inline;
+  
+}
+.follow{
+   flex-grow: 1;
+   text-align: end;
+   margin-right: 20px;
+  
+}
+.title-follow{
+   margin-right: 30px;
+}
+.footer-nav a:hover{
+  background-color: beige;
+}
+.copy{
+    margin-left: 20px;
+}
+/*
+.copy{
+   position: relative;
+   left: 650px;
+   padding-top: 5px;
+   align-items: center;
+}*/
