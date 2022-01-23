@@ -5,10 +5,10 @@ var userName = prompt("Enter your Name");
 var flagGender = true;
 var flagAge = true;
 while (flagGender == true) {
-    var userGender = prompt("Enter your Gender(Male or Female)");
+    var userGender = prompt("Enter your Gender(Male or Female or nothing)");
     var userGenderUp = userGender.toUpperCase();
 
-    if (userGenderUp == "MALE" || userGenderUp == "FEMALE") {
+    if (userGenderUp == "MALE" || userGenderUp == "FEMALE" || userGenderUp=="") {
         while (flagAge == true) {
             var userAge = prompt("Enter your Age");
             if (userAge <= 0) {
@@ -38,7 +38,7 @@ while (flagGender == true) {
 
         }
     } else {
-        alert("The Gender Must be Female or Male");
+        alert("The Gender Must be Female or Male  or nothing");
         flagGender = true;
     }
 }
